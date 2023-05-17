@@ -2,7 +2,7 @@
 
 namespace Utility.BaseClasses
 {
-    class Error
+    public class Error
     {
         public HttpStatusCode Status { get; set; }
         public string Message { get; set; }

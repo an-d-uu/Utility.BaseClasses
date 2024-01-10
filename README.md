@@ -11,3 +11,9 @@ A class that allows you to store and return an HttpStatusCode and a string messa
 #### CustomException
 ***
 Extends the Exception class to give you a HttpStatusCode and Message as well as the base Exception information.
+
+#### HttpRequest.UserAgent
+***
+The static HttpRequest.UserAgent class is used to correctly format the UserAgent string that is sent in the request header of web service calls. It simplifies the process so all you need to do is call the Get() method.The static HttpRequest.UserAgent class is used to correctly format the UserAgent string that is sent in the request header of web service calls. It simplifies the process so all you need to do is call the Get() method.
+
+

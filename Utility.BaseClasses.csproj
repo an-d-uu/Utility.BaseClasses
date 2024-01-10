@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net5.0;net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net5.0;net6.0;net7.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Woodward Coding Solutions</Company>
     <Authors>Andy Woodward</Authors>
     <Description>This .dll contains base classes that can be easily used in multiple projects. It reduces the need to copy class code into new projects and allows for simper updates accross all projects that reference these classes.</Description>
-    <Copyright>Copyright © Woodward Coding Solutions 2023</Copyright>
+    <Copyright>Copyright © Woodward Coding Solutions 2024</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>Utilities</PackageTags>
     <PackageReleaseNotes>Release Notes.md</PackageReleaseNotes>
@@ -15,10 +15,17 @@
     <RepositoryType>git</RepositoryType>
     <Title>Utility.BaseClasses</Title>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <Version>1.0.1</Version>
-
+	  <Version>1.0.2</Version>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
-	<ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DocumentationFile>bin\Release\Utility.BaseClasses.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
 		<None Include="Release Notes.md">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>

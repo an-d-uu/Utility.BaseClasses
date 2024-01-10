@@ -2,6 +2,9 @@
 
 namespace Utility.BaseClasses
 {
+    /// <summary>
+    /// A class that allows you to store and return an HttpStatusCode and a string message. This is very useful when returning responses from API requests where you need to return the status code and a message about why the status code was returned.
+    /// </summary>
     public class Error
     {
         public HttpStatusCode Status { get; set; }
